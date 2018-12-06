@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".authenticate.view.LoginActivity">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        android:background="@color/colorWhite"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/oneOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/oneOneButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/oneTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/oneTwoButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/oneThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/oneThreeButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/oneFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/oneFourButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/oneFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/oneFiveButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/oneSix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/oneSixButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/oneSeven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/oneSevenButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/twoOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/twoOneButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/twoTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/twoTwoButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/twoThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/twoThreeButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/twoFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/twoFourButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/twoFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/twoFiveButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/twoSix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/twoSixButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/twoSeven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/twoSevenButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/threeOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/threeOneButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/threeTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/threeTwoButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/threeThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/threeThreeButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/threeFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/threeFourButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/threeFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/threeFiveButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/threeSix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/threeSixButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/threeSeven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/threeSevenButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/fourOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/fourOneButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="5pt"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/fourTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/fourTwoButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/fourThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/fourThreeButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/fourFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/fourFourButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/fourFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/fourFiveButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/fourSix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/fourSixButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/fourSeven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pill" />
+
+                    <Button
+                        android:id="@+id/fourSevenButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="10pt"
+                        android:layout_margin="8pt"
+                        android:background="@drawable/rounded_corner"
+                        android:text="Empty"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

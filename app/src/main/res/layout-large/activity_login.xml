@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authenticate.view.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_margin="40pt"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:src="@drawable/ic_launcher"/>
+
+        <sns.sn.systems.fonts.MyEditextNormal
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20pt"
+            android:paddingBottom="20dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="Username"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName" />
+
+        <sns.sn.systems.fonts.MyEditextNormal
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15pt"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:hint="Password"
+            android:paddingBottom="20dp"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:id="@+id/layoutForgotPass"
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:clickable="true"
+            android:gravity="center_vertical|right">
+
+            <sns.sn.systems.fonts.MyTextViewNormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password" />
+
+        </LinearLayout>
+
+        <sns.sn.systems.fonts.MyButtonNormal
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:translationZ="4dp"
+            android:textSize="8pt"
+            android:layout_marginTop="5pt"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_button"
+            android:text="Sign in"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

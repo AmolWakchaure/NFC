@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".pharmacist.consumption.view.ReadConsumptionActivity">
+
+    <LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25pt"
+            android:background="@drawable/toolbar"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/gobackLi"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="4.5"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical">
+
+                    <sns.sn.systems.fonts.MyTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Consumption"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorWhite" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/selectPAtientLi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_effect"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <sns.sn.systems.fonts.MyTextViewNormal
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5pt"
+                            android:text="Select Patient"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="12pt"
+                            android:layout_height="12pt"
+                            android:src="@drawable/ic_drop_white" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:background="@color/colorWhite"
+            app:cardCornerRadius="5dp"
+            card_view:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/groupOneOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"/>
+                        <Button
+                            android:id="@+id/groupOneOneButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupOneOneTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupTwoOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"/>
+
+                        <Button
+                            android:id="@+id/groupTwoOneButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:textSize="5pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupTwoOneTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupThreeOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupThreeOneButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupThreeOneTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupFourOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupFourOneButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupFourOneTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupFiveOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupFiveOneButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:visibility="gone"
+                            android:textSize="5pt"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupFiveOneTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupSixOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupSixOneButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:visibility="gone"
+                            android:textSize="5pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupSixOneTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupSevenOne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupSevenOneButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupSevenOneTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupOneTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupOneTwoButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupOneTwoeTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupTwoTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupTwoTwoButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupTwoTwoTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupThreeTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupThreeTwoButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:visibility="gone"
+                            android:textSize="5pt"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupThreeTwoTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupFourTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupFourTwoButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupFourTwoTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupFiveTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupFiveTwoButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupFiveTwoTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupSixTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupSixTwoButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupSixTwoTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupSevenTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupSevenTwoButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupSevenTwoTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupOneThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupOneThreeButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupOneThreeTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupTwoThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupTwoThreeButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupTwoThreeTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupThreeThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupThreeThreeButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupThreeThreeTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupFourThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupFourThreeButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupFourThreeTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupFiveThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupFiveThreeButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:visibility="gone"
+                            android:textSize="5pt"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupFiveThreeTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupSixThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupSixThreeButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:textSize="5pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupSixThreeTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupSevenThree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupSevenThreeButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:textSize="5pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupSevenThreeTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupOneFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupOneFourButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:visibility="gone"
+                            android:textSize="5pt"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupOneFourTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupTwoFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupTwoFourButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupTwoFourTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupThreeFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupThreeFourButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupThreeFourTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupFourFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupFourFourButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupFourFourTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupFiveFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupFiveFourButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupFiveFourTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupSixFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupSixFourButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupSixFourTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/groupSevenFour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_pill"
+                            />
+
+                        <Button
+                            android:id="@+id/groupSevenFourButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="10pt"
+                            android:layout_margin="8pt"
+                            android:background="@drawable/rounded_corner"
+                            android:text="Empty"
+                            android:textSize="5pt"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary" />
+                        <TextView
+                            android:id="@+id/groupSevenFourTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="4pt"
+                            android:text=""/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</layout>

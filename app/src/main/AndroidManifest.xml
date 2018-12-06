@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sns.sn.systems">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:name=".classes.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".splash.SplashActivity"
+            android:label="e - Pill">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".deviceComm.MainActivity" />
+        <activity
+            android:name=".authenticate.view.LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".forgotpass.view.ForgotPasswordActivity"
+            android:label="Forgot Password" />
+        <activity android:name=".pharmacist.homepage.view.HomeActivity" />
+        <activity android:name=".pharmacist.prescription.view.ReadWritePrescriptionActivity" />
+        <activity android:name=".pharmacist.consumption.view.ReadConsumptionActivity" />
+        <activity android:name=".patient.consumption.view.activity.PatientHomeActivity"
+            android:label="e - Pill"/>
+        <activity android:name=".profile.ProfileActivity"></activity>
+    </application>
+
+</manifest>

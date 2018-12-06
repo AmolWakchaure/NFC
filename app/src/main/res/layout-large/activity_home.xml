@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/ic_back_home"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pharmacist.homepage.view.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="25pt">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="30pt">
+        <sns.sn.systems.fonts.MyTextViewSmiBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="15pt"
+            android:text="e - Pill"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_margin="10pt">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.CardView
+
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    card_view:cardElevation="5dp">
+                    <LinearLayout
+                        android:id="@+id/readPrescLi"
+                        android:layout_width="fill_parent"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:background="@drawable/ripple_effect"
+                        android:orientation="vertical"
+                        android:layout_height="fill_parent">
+                        <ImageView
+                            android:layout_width="35pt"
+                            android:layout_height="35pt"
+                            android:src="@drawable/ic_read_presc"/>
+                        <sns.sn.systems.fonts.MyTextViewNormal
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2pt"
+                            android:text="Read Prescription"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.CardView
+                    android:background="@drawable/ripple_effect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="10dp"
+                    card_view:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/readConLi"
+                        android:layout_width="fill_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:layout_height="fill_parent">
+                        <ImageView
+                            android:layout_width="35pt"
+                            android:layout_height="35pt"
+                            android:src="@drawable/ic_read_consume"/>
+                        <sns.sn.systems.fonts.MyTextViewNormal
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2pt"
+                            android:text="Read Consumption"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.CardView
+                    android:background="@drawable/ripple_effect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="10dp"
+                    card_view:cardElevation="5dp">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="fill_parent">
+                        <ImageView
+                            android:layout_width="35pt"
+                            android:layout_height="35pt"
+                            android:src="@drawable/ic_user_profile"/>
+                        <sns.sn.systems.fonts.MyTextViewNormal
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2pt"
+                            android:text="Profile"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.CardView
+                    android:background="@drawable/ripple_effect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="10dp"
+                    card_view:cardElevation="5dp">
+                    <LinearLayout
+                        android:id="@+id/logoutLi"
+                        android:layout_width="fill_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_height="fill_parent">
+                        <ImageView
+                            android:layout_width="35pt"
+                            android:layout_height="35pt"
+                            android:src="@drawable/ic_logout"/>
+                        <sns.sn.systems.fonts.MyTextViewNormal
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2pt"
+                            android:text="Logout"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1.5">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
